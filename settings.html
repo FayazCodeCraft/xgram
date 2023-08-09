@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    #container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;a
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Settings</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Your username">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email">
+
+      <label for="timezone">Timezone</label>
+      <select id="timezone" name="timezone">
+        <option value="gmt-12">GMT-12:00</option>
+        <option value="gmt-11">GMT-11:00</option>
+        <!-- Add more timezone options here -->
+
+      </select>
+
+      <button type="submit">Save Settings</button>
+    </form>
+  </div>
+</body>
+</html>
